@@ -51,13 +51,13 @@ public class SequentialPinger {
 
       int code = connection.getResponseCode();
       if (code == 200) {
-        result = "Green";
+        result = "GREEN";
       }
       if (code == 301) {
-        result = "Redirect";
+        result = "REDIRECT";
       }
     } catch (Exception e) {
-      result = "->Red<-";
+      result = "RED";
     }
     return result;
   }

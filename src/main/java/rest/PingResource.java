@@ -19,7 +19,6 @@ public class PingResource {
 
   private static Gson GSON = new GsonBuilder().setPrettyPrinting().create();
   
-
   // Green (Yellow) students use this simple (no async strategy)
   @GET
   @Produces(MediaType.APPLICATION_JSON)
