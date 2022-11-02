@@ -7,7 +7,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
-//Perhaps this you go into a separate file
+//Perhaps this should go into a separate file
 class PingURL implements Callable<String> {
   String url;
   PingURL(String url) {
@@ -20,13 +20,12 @@ class PingURL implements Callable<String> {
 }
 
 public class ParallelPinger {
-  
     /*
-    Create and executor service
-    Get the list of URLs to contact from the static method in SequentalPinger
-    Make a List of <Future<String>>
-    Create your Callables, and start them via a method on the executor and add the returned future to the list
-    Call a "relevant" method on all your futures to get the response, and to the List you eventually will return
+    1. Create and executor service
+    2. Get the list of URLs to contact from the static method in SequentalPinger
+    3. Make a List of <Future<String>>
+    4. Create your Callables, and start them via a method on the executor and add the returned future to the list
+    5. Call a "relevant" method on all your futures to get the response, and to the List you eventually will return
     */
   public static List<String> getStatusFromAllServers() throws Exception{
     return null;
