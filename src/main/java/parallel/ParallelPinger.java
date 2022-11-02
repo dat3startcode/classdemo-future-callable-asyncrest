@@ -15,17 +15,20 @@ class PingURL implements Callable<String> {
   }
   @Override
   public String call() throws Exception {
+    //Implement the method here that reguests the url and returns the appropriate response.
     return "";
   }
 }
 
 public class ParallelPinger {
     /*
-    1. Create and executor service
-    2. Get the list of URLs to contact from the static method in SequentalPinger
-    3. Make a List of <Future<String>>
-    4. Create your Callables, and start them via a method on the executor and add the returned future to the list
-    5. Call a "relevant" method on all your futures to get the response, and to the List you eventually will return
+    STEPS
+    1. Implement the call method in PingURL to actually ping the url
+    2. Create and executor service
+    3. Get the list of URLs to contact from the static method in SequentalPinger
+    4. Make a List of <Future<String>>
+    5. Create your Callables, and start them via a method on the executor and add the returned future to the list
+    6. Call a "relevant" method on all your futures to get the response, and to the List you eventually will return
     */
   public static List<String> getStatusFromAllServers() throws Exception{
     return null;
